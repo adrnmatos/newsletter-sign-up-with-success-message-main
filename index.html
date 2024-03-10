@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<main>
-			<div id="sign-up">
+			<div id="sign-up-pane">
 				<div class="container">
 					<p class="title">Stay updated!</p>
 					<p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -34,15 +34,18 @@
 							<p>And much more!</p>
 						</div>
 					</div>
-					<form>
-						<label for="email">Email address</label>
+					<form id="form">
+						<div class="text-labels">
+							<label id="email-label" for="email">Email address</label>
+							<label id="error-label" class="hidden">Valid email required</label>
+						</div>
 						<input type="email" placeholder="email@company.com" id="email" />
-						<button onClick="formsubmit()">Subscribe to monthly newsletter</button>
+						<button type="submit">Subscribe to monthly newsletter</button>
 					</form>
 				</div>
-				<img src="./assets/images/illustration-sign-up-desktop.svg" alt="sign-up" />
+				<img id="img-sign-up" alt="sign-up" />
 			</div>
-			<div class="hidden" id="success">
+			<div id="success-pane" class="hidden">
 				<p class="title">Thanks for subscribing!</p>
 				<p class="description">
 					A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to
