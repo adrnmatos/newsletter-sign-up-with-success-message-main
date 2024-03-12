@@ -34,12 +34,12 @@
 							<p>And much more!</p>
 						</div>
 					</div>
-					<form id="form">
+					<form id="form" action=".">
 						<div class="text-labels">
 							<label id="email-label" for="email">Email address</label>
 							<label id="error-label" class="hidden">Valid email required</label>
 						</div>
-						<input type="email" placeholder="email@company.com" id="email" />
+						<input type="text" placeholder="email@company.com" id="email" />
 						<button type="submit">Subscribe to monthly newsletter</button>
 					</form>
 				</div>
@@ -51,7 +51,7 @@
 					A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to
 					confirm your subscription.
 				</p>
-				<button>Dismiss message</button>
+				<button id="successButton">Dismiss message</button>
 			</div>
 		</main>
 		<div class="attribution">
