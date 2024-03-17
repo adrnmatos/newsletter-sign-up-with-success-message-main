@@ -11,7 +11,7 @@ function validateError() {
 }
 
 function validateSuccess() {
-	signUpPanel.classList.add('hidden');
+	signUpPanel.style.display = 'none';
 	successPanel.classList.remove('hidden');
 }
 
@@ -22,7 +22,7 @@ function cleanUpEmailInput() {
 }
 
 function dismissSuccessPanel(event) {
-	signUpPanel.classList.remove('hidden');
+	signUpPanel.style.display = 'flex';
 	successPanel.classList.add('hidden');
 	event.preventDefault();
 }
