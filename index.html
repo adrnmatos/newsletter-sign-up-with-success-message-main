@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<main>
 			<div id="sign-up-pane" style="display: flex">
 				<div class="container">
 					<p class="title">Stay updated!</p>
@@ -45,7 +44,8 @@
 				</div>
 				<img id="img-sign-up" alt="sign-up" />
 			</div>
-			<div id="success-pane" class="hidden">
+			<div id="success-pane" style="display: none">
+				<img src="./assets/images/icon-success.svg" alt="success-icon">
 				<p class="title">Thanks for subscribing!</p>
 				<p class="description">
 					A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to
@@ -53,7 +53,6 @@
 				</p>
 				<button id="successButton">Dismiss message</button>
 			</div>
-		</main>
 		<div class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
 			<a href="#">adrnmatos</a>.

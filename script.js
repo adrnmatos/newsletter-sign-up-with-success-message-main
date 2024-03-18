@@ -12,7 +12,8 @@ function validateError() {
 
 function validateSuccess() {
 	signUpPanel.style.display = 'none';
-	successPanel.classList.remove('hidden');
+	successPanel.style.display = 'flex';
+	inputElement.value = '';
 }
 
 function cleanUpEmailInput() {
@@ -23,7 +24,7 @@ function cleanUpEmailInput() {
 
 function dismissSuccessPanel(event) {
 	signUpPanel.style.display = 'flex';
-	successPanel.classList.add('hidden');
+	successPanel.style.display = 'none';
 	event.preventDefault();
 }
 

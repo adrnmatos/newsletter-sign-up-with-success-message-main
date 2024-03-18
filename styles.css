@@ -124,6 +124,27 @@ button:hover {
 	border-color: var(--tomato);
 }
 
+#success-pane {
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: start;
+	padding: 0 20px;
+	background-color: var(--white);
+}
+
+#success-pane img {
+	margin-top: 35%;
+	margin-bottom: 30px;
+}
+
+#success-pane .description {
+	margin-bottom: 50%;
+}
+
+#successButton {
+	margin-bottom: 50px;
+}
+
 .hidden {
 	display: none;
 }
@@ -153,7 +174,23 @@ button:hover {
 		content: url('./assets/images/illustration-sign-up-desktop.svg');
 	}
 
+	#success-pane {
+		padding: 50px;
+		max-width: 33%;
+		border-radius: 20px;
+	}
+
+	#success-pane img {
+		margin-top: 0px;
+		margin-bottom: 40px;
+	}
+	
+	#success-pane .description {
+		margin-bottom: 40px;
+	}
+	
 	.attribution {
+		display: block;
 		position: absolute;
 		bottom: 10px;
 		font-size: 11px;
